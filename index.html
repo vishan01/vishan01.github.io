@@ -1,92 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vishan</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <link href="styles.css" rel="stylesheet"> 
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vishan</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <link href="styles.css" rel="stylesheet">
+  <link href="index.js" rel="script">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
 
 </head>
+
 <body>
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg border border-bottom-4 border-dark shadow-lg p-3 mb-5  sticky-top" id="nav">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">VISHAN</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav nav-underline">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">ABOUT</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">SKILLS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">PROJECTS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">EDUCATION</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">CERTIFICATES</a>
-              </li>
-              <li class="nav-item" id="resume">
-                <a class="nav-link" ><div class="btn btn-outline-dark">RESUME</div></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-
-
-    <!-- hero_section     -->
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg border border-bottom-4 border-dark shadow-lg p-3 mb-5  sticky-top" id="nav">
     <div class="container-fluid">
-      <div class="hello">
-        <h1 class="closure">matplotlib<span style="color:black;">.<span style="color:#e06c75;">pyplot</span>.</span><span style="color:#61afef;">title</span>("</h1>
-        <div class="string">
-          <h1 class="greeting">Hello </h1>
-         
-        </div>
-        <h1 class="closure">")</h1>
-
-      </div>
-      <div class="container-lg hero">
-        
-        <div class="row">
-          <div class="col-lg-5 ms-5 ps-5 mt-5 pt-3">
-            <div class="mb-5">
-            <span class="me-title "><h1>This is <br/>
-              <span class="name">Vishnu Vardhan</span></h1>
-            </span>
-          </div>
-            <span >
-              <h2 id="DS">Data Scientist</h2>
-              <h2 id="AI">AI-ML Engineer</h2>
-              <h2 id="PD">Python Developer</h2>
-            </span>
-          </div>
-          <div class="col-lg-6 ">
-            <div class="container-fluid img-round ms-lg-5 ms-sm-5">
-              <img src="/assets/profile.jpg" alt="My Profile" class="image--cover m-lg-5 m-sm-5 " />
-            </div>
-          </div>
-          
-        </div>
-        
-  
-    
-  </div>
-</div>
+      <a class="navbar-brand" href="#">VISHAN</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav nav-underline">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">SKILLS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/projects.html">PROJECTS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/education.html">EDUCATION</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/certifications.html">CERTIFICATES</a>
+          </li>
+          <li class="nav-item" id="resume">
+            <a class="nav-link">
+              <div class="btn btn-outline-dark">RESUME</div>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
+  </nav>
+
+
+  <!-- hero_section     -->
+
+  <div class="container-lg hero ">
+
+    <div class="row">
+      <div class="col-lg-6 ms-5 mt-5 pt-3">
+        <h1>Hello, I am</h1>
+        <h1>Vishnu Vardhan Reddy</h1>
+        <h4>Data Scientist, AI Engineer, Python Developer</h4>
+        <p>I am a Neo Data Scientist and GEN AI Tech enthusiast who is currently pursing his career in the AI field.</p>
+        <div class="mt-4">
+          <a href="#about">
+            <div class="btn btn-outline-dark border border-dark border-2 ms-4 ">Know More</div>
+          </a>
+          <a href="/contact.html">
+            <div class="btn btn-outline-dark border border-dark border-2 ms-4 px-4 ">Contact</div>
+          </a>
+        </div>
+        <p class="mt-5 fw-bolder">@FindMe At:</p>
+        <div class="mt-3 ms-5">
+          <a href=""><img src="/assets/linkedin.png" height="50px" alt="linkedin"></a>
+          <a href=""><img src="/assets/github.png" height="40px" alt="github"></a>
+          <a href=""><img src="/assets/twitter.webp" height="45px" alt="twitter"></a>
+        </div>
+      </div>
+      <div class="col-lg-5 col-sm-8 d-lg-block d-sm-none d-xs-none">
+        <div class="container-fluid img-round ms-lg-5 ms-sm-5">
+          <img src="/assets/profile.png" width="350px" alt="My Profile" class="image--cover m-lg-5 m-sm-5 " />
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+  
+  <!-- ABOUT SECTION -->
+  <div class="mt-5 text-center fw-bold fs-2 hero" id="about"><span class="about">ABOUT ME</span></div>
+  <div class="container-fluid mx-1">
+    <div class="mt-5 ">
+      <div class="row">
+        <div class="col-lg-6 col-sm-0">
+          <img src="assets/about.png" height="600px" class="image-about" alt="Also me">
+        </div>
+        <div class="col-lg-6 col-sm-12 hero fs-5">
+          <p>I am an engineer with a passion for exploring and mastering various domains of technology, such as:
+            <br/>- Artificial intelligence
+            <br/>- Machine learning
+            <br/>- Data Science
+            <br/>- Web development
+            <br/>- Information technology
+            <br/>
+            <br/>I have a knack for working well with others and communicating effectively, which makes me a valuable team player in any project. I am always eager to learn new things and keep up with the latest innovations and advancements in technology, as I believe that this is the way to thrive in the dynamic and competitive world of engineering.
+            <br/><br/>
+            With my versatile skill set and project experience, I am confident in my ability to take on any challenge and deliver outstanding results that will benefit any organization.
+            </p>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- skill-section -->
+<div class="container " id="skills">
+  <div class="mt-5 text-center fw-bold fs-2 hero" id="about"><span class="about">What I Do?</span></div>
+
+
+  <div class="row my-3 ">
+    <div class="col-6 ">
+      <img src="assets/data.png" width="500px" alt="">
+    </div>
+    <div class="col-6"></div>
+  </div>
+
+  <div class="row my-3 ">
+    <div class="col-6">
+      <img src="assets/ai.png" width="500px" alt="">
+    </div>
+    <div class="col-6"></div>
+  </div>
+
+    <div class="row my-3 ">
+    <div class="col-6">
+      <img src="assets/web.png" width="500px" alt="">
+    </div>
+    <div class="col-6"></div>
+  </div>
+
+  
+</div>
+
+  
 </body>
+
 </html>

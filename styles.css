@@ -1,7 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;500&display=swap');
 
 body{
-    background-color: #F1FADA;
+    background-color: #ffffff;
     
 }
 
@@ -20,73 +19,60 @@ body{
 
 /* hero-section */
 .hero{
-    border: #265073 solid 2px;
-    border-radius: 2%;
+    font-family: JetBrains Mono;
 }
 
-.hero:hover{
-    border: black solid 2px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;;
-}
-/* NAMASTE */
-.hello{
-    
-  font-size: 2px;
-  font-family: JetBrains Mono, monospace;
-  margin-bottom: 50px;
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #e4bb68;
 
-}
-.greeting{
-    color: #2D9596;
-}
-/* NAMASTE */
 
-/* photo and text */
+
 .image--cover {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    object-fit: cover;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+ 
     transition: .6s ease;
-    object-position: center right;
+
+   
+    
   }
 
 .image--cover:hover {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    object-fit: cover;
-    -webkit-filter: grayscale(75%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(75%);
+    width: 350px;
+    height: 350px;
+  
+    object-fit: fill;
+
     object-position: center right;
+    transform: scale(1.5);
   }
+/* hero-section */
 
-.me-title{
-    font-family: 'Kode Mono';
-    font-size: larger;
-    
 
-}
-.me-title .name{
-    color: crimson;
+/* about-section */
+.about{
+    border-bottom: black solid 2px;
 }
 
-#AI{
-    color:brown;
+.image-about{
+    transition: .6s ease;
 }
-#DS{
-
+.image-about:hover{
+    object-fit: fill;
+    object-position: center right;
+    -webkit-filter: grayscale(70%); 
+    filter: grayscale(70%);
 }
-#PD{
-    color: maroon;
-}
-/* photo and text */
+
+/* about-section */
 
 
-/* skills-content */
+/* miscellaneous */
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 2200ms;
+  }
+  .show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+  }
