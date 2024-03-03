@@ -1,63 +1,320 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>VISHAN</title>
-        <link rel="icon" type="image/x-icon" href="assets/icon.png">
-      
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-          integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-          crossorigin="anonymous"></script>
-        <link href="projects.css" rel="stylesheet">      
-      
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
-      
-      </head>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VISHAN</title>
+  <link rel="icon" type="image/x-icon" href="assets/icon.png">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <link href="projects.css" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+
+</head>
+
 <body>
-     <!-- NAVBAR -->
-     <nav class="navbar navbar-expand-lg border border-bottom-4 border-dark border-right-0 shadow-lg p-3 mb-5 sticky-top" id="nav">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">VISHAN</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse navbarNav" id="navbarNav">
-            <ul class="navbar-nav nav-underline">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="/index.html#about">ABOUT</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/index.html#skills">SKILLS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/projects.html">PROJECTS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/education.html">EDUCATION</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/education.html#certificates">CERTIFICATES</a>
-              </li>
-              <li class="nav-item" id="resume">
-                <a class="nav-link">
-                  <div class="btn btn-outline-dark">RESUME</div>
-                </a>
-              </li>
-            </ul>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg border border-bottom-4 border-dark border-right-0 shadow-lg p-3 mb-5 sticky-top"
+    id="nav">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">VISHAN</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse navbarNav" id="navbarNav">
+        <ul class="navbar-nav nav-underline">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/index.html#about">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/index.html#skills">SKILLS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/projects.html">PROJECTS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/education.html">EDUCATION</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/education.html#certificates">CERTIFICATES</a>
+          </li>
+          <li class="nav-item" id="resume" >
+            <a class="nav-link" href="assets/base.pdf" target="_blank">
+              <div class="btn btn-outline-dark">RESUME</div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- hero-section     -->
+  <div class="container text-center">
+    <div class="fs-1 fw-bold "><span class=" heading">MY PROJECTS</span> </div>
+    <p class="d-inline-flex gap-1">
+      <a class="btn btn-outline-primary border shadow-lg p-3 m-3" data-bs-toggle="collapse"
+        href="#CollapseExample1" role="button" aria-expanded="false" aria-controls="CollapseExample1">Machine
+        Learning</a>
+      <button class="btn btn-outline-primary border shadow-lg p-3 m-3" type="button" data-bs-toggle="collapse"
+        data-bs-target="#CollapseExample2" aria-expanded="false" aria-controls="CollapseExample2">Data
+        Science</button>
+      <button class="btn btn-outline-primary border shadow-lg p-3 m-3" type="button" data-bs-toggle="collapse"
+        data-bs-target="#CollapseExample3" aria-expanded="false" aria-controls="CollapseExample3">Web
+        Development</button>
+
+    </p>
+
+ <!-- PROJECT SHOWCASE    -->
+  <!--_____________________________________________________________ MACHINE LEARNING _____________________________________________________________-->
+    <div class="collapse" id="CollapseExample1">
+      <div class="card card-body">
+       
+
+        <div class="row">
+          <div class="col-lg-4 col-sm-12">
+            <div class="card mt-3" style="width: 18rem;">
+              <img src="/assets/cinefinder.PNG" class="card-img-top" alt="cinefinder">
+              <div class="card-body">
+                <h5 class="card-title">CINEFINDER</h5>
+                <p class="card-text">A perfect movie recommender for the party</p>
+
+                <a href="https://github.com/vishan01/CINEFINDER" class="btn btn-dark">GITHUB</a>
+                <a href="https://cinefinder.streamlit.app" class="btn btn-primary">WEBSITE</a>
+              </div>
+            </div>
+
+            <div class="card mt-3" style="width: 18rem;">
+              <img src="/assets/unitebot.png" width="286px" class="card-img-top" alt="UNITEBOT">
+              <div class="card-body">
+                <h5 class="card-title">UNITEBOT</h5>
+                <p class="card-text">Your gender neutral buddy who guides you in tough times with assurance</p>
+
+                <a href="https://github.com/vishan01/LGBTQ-bot" class="btn btn-dark">GITHUB</a>
+              </div>
+            </div>
+
+          </div>
+
+
+          <div class="col-lg-4 col-sm-12">
+            <div class="card mt-3" style="width: 18rem;">
+              <img src="assets/infoclarity.PNG" class="card-img-top" alt="infoclarity">
+              <div class="card-body">
+                <h5 class="card-title">INFOCLARITY</h5>
+                <p class="card-text">The information summarization and detailing bot</p>
+
+                <a href="https://github.com/vishan01/InfoClarity" class="btn btn-dark">GITHUB</a>
+                <a href="https://infoclarity.streamlit.app" class="btn btn-primary">WEBSITE</a>
+              </div>
+            </div>
+
+
+          </div>
+
+
+          <div class="col-lg-4 col-sm-12">
+            <div class="card mt-3" style="width: 18rem;">
+              <img src="assets/imagetory.PNG" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">IMAGETORY</h5>
+                <p class="card-text">The story behind the image is yet to be discovered</p>
+
+                <a href="https://github.com/vishan01/Imagetory" class="btn btn-dark">GITHUB</a>
+                <a href="https://imagetory.streamlit.app" class="btn btn-primary">WEBSITE</a>
+              </div>
+            </div>
+
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+ <!-- _____________________________________________________________ DATA SCIENCE _____________________________________________________________    -->
+    <div class="collapse" id="CollapseExample2">
+      <div class="card card-body">
+        <div class="row">
+          <div class="col-lg-4 col-sm-12">
+            <div class="card mt-3" style="width: 18rem;">
+              <img src="/assets/sentweet.PNG" class="card-img-top" alt="sentweet">
+              <div class="card-body">
+                <h5 class="card-title">SENTWEET</h5>
+                <p class="card-text">A sentiment analysis of twitter tweets with NLP</p>
+
+                <a href="https://github.com/vishan01/sentweet" class="btn btn-dark">GITHUB</a>
+              </div>
+            </div>
+
+            <div class="card mt-3" style="width: 18rem;">
+              <img src="/assets/nobel.PNG" width="286px" class="card-img-top" alt="NOBEL PRIZE">
+              <div class="card-body">
+                <h5 class="card-title">A Visual History of Nobel Prize Winners</h5>
+                <p class="card-text">Is the nobel prized biased in any way in present days. Lets find out</p>
+
+                <a href="https://github.com/vishan01/Datascience-with-python/blob/main/PROJECTS/A%20Visual%20History%20of%20Nobel%20Prize%20Winners/workspace/notebook.ipynb" class="btn btn-dark">GITHUB</a>
+              </div>
+            </div>
+
+          </div>
+
+
+          <div class="col-lg-4 col-sm-12">
+            <div class="card mt-3" style="width: 18rem;">
+              <img src="assets/netflix.PNG" class="card-img-top" alt="infoclarity">
+              <div class="card-body">
+                <h5 class="card-title">Investigating Netflix Movies and Guest Stars in The Office
+                </h5>
+                <p class="card-text">Are the netflix movies reducing there duration time as the time goes</p>
+
+                <a href="https://github.com/vishan01/Datascience-with-python/blob/main/PROJECTS/Investigating%20Netflix%20Movies%20and%20Guest%20Stars%20in%20The%20Office/notebook.ipynb" class="btn btn-dark">GITHUB</a>
+              </div>
+            </div>
+
+
+          </div>
+
+
+          <div class="col-lg-4 col-sm-12">
+            <div class="card mt-3" style="width: 18rem;">
+              <img src="assets/credit.PNG" class="card-img-top" alt="credit">
+              <div class="card-body">
+                <h5 class="card-title">Predicting Credit Card Approvals</h5>
+                <p class="card-text">An algorithm for detecting elgible people for providing credit cards</p>
+
+                <a href="https://github.com/vishan01/Datascience-with-python/blob/main/PROJECTS/Predicting%20Credit%20Card%20Approvals/notebook.ipynb" class="btn btn-dark">GITHUB</a>
+              </div>
+            </div>
+
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+<!-- _____________________________________________________________ WEB DEVELOPMENT _____________________________________________________________    -->
+    <div class="collapse" id="CollapseExample3">
+      <div class="card card-body">
+        <div class="row">
+          <div class="col-lg-4 col-sm-12">
+            <div class="card mt-3" style="width: 18rem;">
+              <img src="/assets/questcompass.png" height="170px" class="card-img-top" alt="questcompass">
+              <div class="card-body">
+                <h5 class="card-title">QUESTCOMPASS</h5>
+                <p class="card-text">Do you need a perfect travel guide irresepective of the season</p>
+
+                <a href="https://github.com/vishan01/QuestCompass" class="btn btn-dark">GITHUB</a>
+              </div>
+            </div>
+
+            <div class="card mt-3" style="width: 18rem;">
+              <img src="/assets/referup.PNG" width="286px" class="card-img-top" alt="referup">
+              <div class="card-body">
+                <h5 class="card-title">REFERUP</h5>
+                <p class="card-text">A referal message generator for your required job</p>
+
+                <a href="https://github.com/vishan01/referup" class="btn btn-dark">GITHUB</a>
+                <a href="https://referup.streamlit.app" class="btn btn-primary">WEBSITE</a>
+              </div>
+            </div>
+
+          </div>
+
+
+          <div class="col-lg-4 col-sm-12">
+            <div class="card mt-3" style="width: 18rem;">
+              <img src="assets/hackz.png" class="card-img-top" alt="hackz">
+              <div class="card-body">
+                <h5 class="card-title">HACKZ</h5>
+                <p class="card-text">Platform for encouraging and providing opportunities for genz through hackathons</p>
+
+                <a href="https://github.com/vishan01/Hackz" class="btn btn-dark">GITHUB</a>
+              </div>
+            </div>
+
+
+          </div>
+
+
+          <div class="col-lg-4 col-sm-12">
+            <div class="card mt-3" style="width: 18rem;">
+              <img src="assets/eduenv.jpg" class="card-img-top" alt="eduenv">
+              <div class="card-body">
+                <h5 class="card-title">EDUENV</h5>
+                <p class="card-text">Virtual educational environment for both students and teachers</p>
+
+                <a href="https://github.com/vishan01/eduenv" class="btn btn-dark">GITHUB</a>
+              </div>
+            </div>
+
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container text-center">
+      <h1 class="heading"> FEATURED PROJECTS</h1>
+      
+    </div>
+    <div id="carouselExampleDark" class="carousel carousel-dark slide mb-5">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <a href="https://cinefinder.streamlit.app"><img src="/assets/cinefinder.PNG" class="d-block w-100" alt="CINEFINDER"></a>
+          <div class="carousel-caption d-none d-md-block">
+            <h5 style="color:aliceblue;">CINEFINDER</h5>
+            <p style="color:aliceblue;">For finding your movie</p>
           </div>
         </div>
-      </nav>
-    
-    
-    
+        <div class="carousel-item" data-bs-interval="2000">
+          <a href="https://infoclarity.streamlit.app"><img src="/assets/infoclarity.PNG" class="d-block w-100" alt="INFOCLARITY"></a>
+          <div class="carousel-caption d-none d-md-block">
+            <h5 style="color:aliceblue;">InfoClarity</h5>
+            <p style="color:aliceblue;">For summarizing your information</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <a href="https://imagetory.streamlit.app"><img src="/assets/imagetory.PNG" class="d-block w-100" alt="Imagetory"></a>
+          <div class="carousel-caption d-none d-md-block">
+            <h5 style="color:aliceblue;">Imagetory</h5>
+            <p style="color:aliceblue;">Lets find out the story behind the photo</p>
+          </div>
+        </div>
+      </div>
+     
+    </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
 
-
+  </div>
 </body>
+
 </html>
