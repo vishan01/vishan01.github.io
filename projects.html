@@ -22,6 +22,7 @@
 </head>
 
 <body>
+  <div style="overflow-x: hidden;">
   <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg border border-bottom-4 border-dark border-right-0 shadow-lg p-3 mb-5 sticky-top"
     id="nav">
@@ -62,14 +63,14 @@
   <!-- hero-section     -->
   <div class="container text-center">
     <div class="fs-1 fw-bold "><span class=" heading">MY PROJECTS</span> </div>
-    <p class="d-inline-flex gap-1">
+    <p class="d-inline-flex">
       <a class="btn btn-outline-primary border shadow-lg p-3 m-3" data-bs-toggle="collapse"
         href="#CollapseExample1" role="button" aria-expanded="false" aria-controls="CollapseExample1">Machine
         Learning</a>
       <button class="btn btn-outline-primary border shadow-lg p-3 m-3" type="button" data-bs-toggle="collapse"
         data-bs-target="#CollapseExample2" aria-expanded="false" aria-controls="CollapseExample2">Data
         Science</button>
-      <button class="btn btn-outline-primary border shadow-lg p-3 m-3" type="button" data-bs-toggle="collapse"
+      <button class="btn btn-outline-primary border shadow-lg p-2 m-3" type="button" data-bs-toggle="collapse"
         data-bs-target="#CollapseExample3" aria-expanded="false" aria-controls="CollapseExample3">Web
         Development</button>
 
@@ -267,11 +268,11 @@
       </div>
     </div>
 
-    <div class="container text-center d-lg-block d-none">
+    <div class="container text-center ">
       <h1 class="heading"> FEATURED PROJECTS</h1>
       
     </div>
-    <div id="carouselExampleDark" class="carousel carousel-dark slide mb-5">
+    <div id="carouselExampleDark" class="carousel carousel-dark slide mb-5 ">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -279,7 +280,7 @@
         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
 
       </div>
-      <div class="carousel-inner">
+      <div class="carousel-inner rounded-4">
         <div class="carousel-item active" data-bs-interval="10000">
           <a href="https://cinefinder.streamlit.app"><img src="/assets/cinefinder.PNG" class="d-block w-100" alt="CINEFINDER"></a>
           <div class="carousel-caption d-none d-md-block">
@@ -301,9 +302,7 @@
             <p style="color:aliceblue;">Lets find out the story behind the photo</p>
           </div>
         </div>
-      </div>
-     
-    </div>
+      </div>   
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
@@ -315,6 +314,7 @@
     </div>
 
   </div>
+</div>
 </body>
 
 </html>
