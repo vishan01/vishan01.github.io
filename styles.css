@@ -5,6 +5,10 @@ body{
     overflow-x: hidden;
 }
 
+a{
+    color:white;
+}
+
 #nav{
     background-color: whitesmoke;
     font-family: "Anta";
