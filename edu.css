@@ -43,3 +43,49 @@ body{
     filter: blur(0);
     transform: translateX(0);
   }
+
+.card img{
+  transition-duration: 0.5s;
+} 
+.card:hover img{
+  transition: all 0.5s;
+  filter: blur(3px);
+}
+.card .text-show{
+    display: block;
+    opacity: 1;
+    visibility: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    background-color: white;
+    backdrop-filter: blur(10px);
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.card:hover .text-show{
+    visibility: visible;
+    z-index: 1;
+    animation: fadeIn 0.5s;
+}
+
+.card:hover{
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+  transition: transform ease 0.5s, box-shadow ease 0.5s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+
+  }
+  to {
+    opacity: 1;
+  }
+}
